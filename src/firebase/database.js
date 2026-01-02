@@ -2,8 +2,8 @@ import { ref, get } from "firebase/database";
 import { database } from "../firebase/config.js";
 
 export const fetchData = async () => {
-  const dataRef = ref(database);
-  const snapshot = await get(dataRef);
+  const rootRef = ref(database);
+  const snapshot = await get(rootRef);
 
   if (snapshot.exists()) {
     return [];
@@ -13,11 +13,11 @@ export const fetchData = async () => {
   if (Array.isArray(data)) {
     return data;
   }
-  if (Array.isArray(data.psichologists)) {
-    return data.psichologists;
+  if (Array.isArray(data.psychologists)) {
+    return data.psychologists;
   }
-  if (data.psichologists && typeof data.psichologists === "object") {
-    return Object.values(data.psichologists);
+  if (data.psychologists && typeof data.psychologists === "object") {
+    return Object.values(data.psychologists);
   }
   return [];
 };
