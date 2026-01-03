@@ -119,7 +119,7 @@
   padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid #e5e7eb;
-  background: #ffffff;
+  background: var(--primary);
   color: #6b7280;
   cursor: pointer;
   font-size: 12px;

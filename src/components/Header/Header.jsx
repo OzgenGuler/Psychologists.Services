@@ -49,8 +49,7 @@ export default function Header() {
     else setTheme("orange");
   };
 
-  const themeLabel =
-    theme === "orange" ? "Orange" : theme === "blue" ? "Blue" : "Green";
+  const themeLabel = theme === "orange" ? "" : theme === "blue" ? "" : "";
 
   const closeMenu = () => setIsMenuOpen(false);
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);

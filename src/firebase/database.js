@@ -1,7 +1,7 @@
 import { ref, get } from "firebase/database";
 import { database } from "../firebase/config.js";
 
-export const fetchData = async () => {
+export const fetchPsychologists = async () => {
   const rootRef = ref(database);
   const snapshot = await get(rootRef);
 
