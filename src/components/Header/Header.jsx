@@ -61,6 +61,7 @@ export default function Header() {
           psychologists.<span>services</span>
         </Link>
 
+        {/* DESKTOP NAV */}
         <nav className={styles.nav}>
           <NavLink
             to="/"
@@ -78,6 +79,7 @@ export default function Header() {
             Psychologists
           </NavLink>
 
+          {/* SADECE LOGIN OLUNCA GÖRÜNSÜN */}
           {user && (
             <NavLink
               to="/favorites"
@@ -89,6 +91,7 @@ export default function Header() {
           )}
         </nav>
 
+        {/* DESKTOP ACTIONS */}
         <div className={styles.actions}>
           <button
             className={styles.themeBtn}
@@ -148,6 +151,7 @@ export default function Header() {
           )}
         </div>
 
+        {/* HAMBURGER  */}
         <button
           type="button"
           className={`${styles.menuToggle} ${
@@ -164,6 +168,7 @@ export default function Header() {
         </button>
       </header>
 
+      {/* SAĞDAN AÇILAN DRAWER MENU */}
       {isMenuOpen && (
         <div className={styles.drawerBackdrop} onClick={closeMenu}>
           <div className={styles.drawer} onClick={(e) => e.stopPropagation()}>
@@ -184,6 +189,7 @@ export default function Header() {
                 Psychologists
               </NavLink>
 
+              {/* MOBİLDE DE SADECE LOGIN OLUNCA GÖRÜNSÜN */}
               {user && (
                 <NavLink
                   to="/favorites"

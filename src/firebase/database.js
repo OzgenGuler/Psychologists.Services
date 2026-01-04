@@ -5,9 +5,6 @@ export const fetchPsychologists = async () => {
   const rootRef = ref(database);
   const snapshot = await get(rootRef);
 
-  if (snapshot.exists()) {
-    return [];
-  }
   const data = snapshot.val();
 
   if (Array.isArray(data)) {

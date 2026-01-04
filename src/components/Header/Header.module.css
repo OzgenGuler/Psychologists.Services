@@ -103,6 +103,7 @@
   font-size: 14px;
   font-weight: 500;
   color: #191a15;
+  /* justify-content: space-between; */
 }
 
 .userIcon {
@@ -116,7 +117,7 @@
 }
 
 .themeBtn {
-  padding: 6px 10px;
+  padding: 10px 10px;
   border-radius: 999px;
   border: 1px solid #e5e7eb;
   background: var(--primary);

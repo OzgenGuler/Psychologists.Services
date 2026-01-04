@@ -81,6 +81,16 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
 }
 
+.question {
+  margin-top: 185px;
+  border-radius: 10px;
+}
+
+.icon_add {
+  margin-top: 38px;
+  left: 1297px;
+}
+
 .expert {
   display: flex;
   align-items: end;
